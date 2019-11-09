@@ -1,10 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
-//@route  GET api/users
-//desc    test route
+//@route  POST api/users
+//desc    add a user to users
 //@access Public
 
-router.get('/', (req, res) => res.send('Users route'))
+router.post('/', (req, res) => {
+  console.log(res.body)
+})
 
 module.exports = router

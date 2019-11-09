@@ -5,10 +5,11 @@ const config = require('config') // gets the config package, which allows this f
 const db = config.get('mongoURI') // gets the mongodb string
 
 const connectDB = async () => {
+  console.log('test')
   try {
     await mongoose.connect(db, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
+      useNewUrlParser: true
     })
 
     console.log('MongoDB connected...')
