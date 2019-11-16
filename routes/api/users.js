@@ -6,7 +6,8 @@ const router = express.Router()
 //@access Public
 
 router.post('/', (req, res) => {
-  console.log(res.body)
+  console.log(req.body)
+  res.send('User route')
 })
 
 module.exports = router
