@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://atumu123:atumu123@devconnector-ygcb0.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://atumu123:atumu123@devconnector-ygcb0.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtToken": "mytokenhahaha"
 }
