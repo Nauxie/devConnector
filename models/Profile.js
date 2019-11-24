@@ -2,32 +2,31 @@ const mongoose = require('mongoose')
 
 const ProfileSchema = new mongoose.Schema({
   user: {
-    type: mongoose.Schema.Types.ObjectId
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'user'
   },
   company: {
-      type: String
+    type: String
   },
   website: {
-      type: String
+    type: String
   },
   location: {
-      type: String
+    type: String
   },
   status: {
-      type: String,
-      required: true
-
+    type: String,
+    required: true
   },
   skills: {
-      type: [String],
-      required: true
+    type: [String],
+    required: true
   },
   bio: {
-      type: String
+    type: String
   },
   githubusername: {
-      type: String
+    type: String
   },
   experience: [
     {
@@ -111,4 +110,4 @@ const ProfileSchema = new mongoose.Schema({
   }
 })
 
-module.exports = Profile = mongoose.model('profile',ProfileSchema)
+module.exports = Profile = mongoose.model('profile', ProfileSchema)
